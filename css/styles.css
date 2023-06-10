@@ -16,6 +16,18 @@
   color: #9747ef;
 }
 
+.error{
+  border-color:#dc3545 !important;
+}
+
+.seccionJuegos
+{
+  height: 100%;
+} 
+
+.m-negativo {
+  margin: -5px !important;
+}
 
  /*FIN DE MI CSS*/
 
@@ -2262,8 +2274,8 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem rgba(29, 128, 159, 0.25);
 }
 .form-check-input:checked {
-  background-color: #1D809F;
-  border-color: #1D809F;
+  background-color: #f10e0e;
+  border-color: #f10e0e;
 }
 .form-check-input:checked[type=checkbox] {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");

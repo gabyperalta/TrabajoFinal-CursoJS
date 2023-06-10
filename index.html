@@ -27,10 +27,23 @@
             <div class="container px-4 px-lg-5 text-center tituloPrincipal">
                 <h1 class="mb-1">Trabajo Final - Curso JS</h1>
                 <h3 class="mb-5"><em>Gabriela Peralta</em></h3>
-                <a href="formulario.html" class="btn btn-primary btn-xl">Ingresa al formulario</a>
+                <a href="formulario.html" id="linkForm" class="btn btn-primary btn-xl">Ingresa al formulario</a>
             </div>
         </header>
     </body>
     
     <script src="js/scripts.js"></script>
+    <script>
+        $(document).ready(function(){
+           localStorage.clear();
+      var datos=JSON.parse(localStorage.getItem('DatosUsuario'));
+        if(datos)
+          {
+            $('#linkForm').html('Ingresar a Juegos')
+            $('#linkForm').prop('href','file:///D:/Users/GRABRIELA/Documents/GitHub/TrabajoFinal-CursoJS/juegos.html')
+           
+          }
+ });
+    </script>
+
 </html>

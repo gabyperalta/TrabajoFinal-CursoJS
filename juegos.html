@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Trabajo Práctico Final - Curso JS</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://kit.fontawesome.com/2cefa809f0.js" crossorigin="anonymous"></script>
+        <script src="js/jquery-3.7.0.min.js"></script>
+    </head>
+
+    <body id="page-top">
+        <!-- JUEGOS-->
+        <section class="content-section bg-primary text-white seccionJuegos" id="seccionJuegos">
+            <div class="col-12 ">
+                <a class="btn btn-dark mb-2 me-4 ms-4 text-start" href="D:\Users\GRABRIELA\Documents\GitHub\TrabajoFinal-CursoJS\index.html">Volver al Inicio</a>
+              </div>
+            <div class="container px-4 px-lg-5 text-center">
+                <h2 class="mb-4" id="titulo">BIENVENIDO/A </h2>
+                <h3 class="mb-5"><em>Para continuar, seleccione un juego.</em></h3>
+                <button class="btn btn-xl btn-light me-4" id="adivinanzas">Adivinanzas</button>
+                <button class="btn btn-xl btn-dark" id="preguntasRespuestas">Preguntas y Respuestas</button>
+            </div>
+        </section>
+    
+        <!--Adivinanzas-->
+        <section class="content-section d-none" id="SeccionAdivinanzas">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h2 class="mb-2 text-secondary">Adivinanzas</h2>
+                    <h3 class=" mb-5">A continuación se encuentran cuatro adivinanzas con opciones a elegir como respuesta. <br>
+                        EXITOS, A JUGAR!</h3>
+                </div>
+                <form id="formularioAdivinanzas">
+                    <div class="row gx-0">
+                        <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                                <div class="caption m-negativo">
+                                    <div class="caption-content">
+                                        <div class="h1">Tiene dientes, pero no puede comer.</div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="adivinanza1"
+                                                id="adivinanza1Opcion1" value="Peine">
+                                            <label class="form-check-label" for="adivinanza1Opcion1">
+                                                Peine
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="adivinanza1"
+                                                id="adivinanza1Opcion2" value="Abuelo">
+                                            <label class="form-check-label" for="adivinanza1Opcion2">
+                                                Abuelo/a
+                                            </label>
+                                        </div>
+                                        <div class="text-center" id="resultadoAdivinanza0"></div>
+                                    </div>
+        
+                                </div>
+                                <img class="img-fluid" src="assets/img/adivinanzas-1.png" alt="..." />
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                                <div class="caption m-negativo">
+                                    <div class="caption-content">
+                                        <div class="h1">Blanco como la sal, se puede abrir pero no cerrar.</div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="adivinanza2"
+                                                id="adivinanza2Opcion1" value="Cascara de huevo">
+                                            <label class="form-check-label" for="adivinanza2Opcion1">
+                                                Cascara de huevo
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="adivinanza2"
+                                                id="adivinanza2Opcion2" value="Heladera">
+                                            <label class="form-check-label" for="adivinanza2Opcion2">
+                                                Heladera
+                                            </label>
+                                        </div>
+                                        <div class="text-center" id="resultadoAdivinanza1"></div>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/adivinanzas-2.png" alt="..." />
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                                <div class="caption m-negativo">
+                                    <div class="caption-content">
+                                        <div class="h1">Está delante de nosotros, pero no se puede ver. ¿Qué es?</div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="adivinanza3"
+                                                id="adivinanza3Opcion1" value="Sombra">
+                                            <label class="form-check-label" for="adivinanza3Opcion1">
+                                                Sombra
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="adivinanza3"
+                                                id="adivinanza3Opcion2" value="Futuro">
+                                            <label class="form-check-label" for="adivinanza3Opcion2">
+                                                Futuro
+                                            </label>
+                                        </div>
+                                        <div class="text-center" id="resultadoAdivinanza2"></div>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/adivinanzas-3.png" alt="..." />
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="portfolio-item" href="#!">
+                                <div class="caption m-negativo">
+                                    <div class="caption-content">
+                                        <div class="h1">¿Cuál es el ave que tiene la panza llana?</div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="adivinanza4"
+                                                id="adivinanza4Opcion1" value="Pato">
+                                            <label class="form-check-label" for="adivinanza4Opcion1">
+                                                Pato
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="adivinanza4"
+                                                id="adivinanza4Opcion2" value="Avellana">
+                                            <label class="form-check-label" for="adivinanza4Opcion2">
+                                                Avellana
+                                            </label>
+                                        </div>
+                                        <div class="text-center" id="resultadoAdivinanza3"></div>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/adivinanzas-4.png" alt="..." />
+                            </a>
+                        </div>
+                        <div class="col-lg-12  mt-3 alert alert-danger alert-dismissible fade show d-none" id="validacionAdivinanzas" role="alert">
+                            <strong> Para continuar, deberá responder todas las adivinanzas!</strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <div class="col-lg-12 text-center mt-3" id="botonEnviar">
+                            <button type="submit" class="btn btn-dark">Enviar Respuestas</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="col-lg-12 text-center mt-3 d-none" id="reiniciarAdivinanzas">
+                    <h3 class="mt-1" id="puntuacionAdivinanzas"></h3>
+                    <button type="button" class="btn btn-dark " onclick="reiniciarAdivinanzas()">Reiniciar Juego</button>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Adivinanzas -->
+
+        <!-- Preguntas y Respuestas -->
+        <section class="content-section d-none" id="SeccionPreguntas">
+            <div class="container px-4 px-lg-5">
+                <div class="content-section-heading text-center">
+                    <h2 class="mb-2 text-secondary">Preguntas y Respuestas</h2>
+                    <h3 class=" mb-5">A continuación se encuentran preguntas con su correspondientes puntuación y posibles respuestas.
+                   <br> EXITOS, A JUGAR!</h3>
+                </div>
+                <p><strong>-Puntuación-</strong></p>
+                <div class="progress" style="height: 30px;">
+                    <div id="puntuacion" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"  style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0 ptos</div>
+                    <input type="hidden"  id="valorPuntuacion">
+                  </div>
+                
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item text-center"><h5 class="mb-1"><em>¿En que año fue la revolución de Mayo de Argentina? (20 ptos)</em></h5>
+                            <div id="respuestas1"><button type="button" class="btn btn-primary" onclick="respuesta('1','1810')">1810</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('1','1816')">1816</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('1','1813')">1813</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('1','1799')">1799</button></div>
+                            
+                            <h3 class="mt-1 d-none" id="mensajeValidacion1"></h3>
+                        </li>
+                        <li class="list-group-item text-center d-none" id="pregunta2">
+                            <h5 class="mb-1"><em>¿Con qué bebida se suele acompañar el Fernet? (20 ptos)</em></h5>
+                            <div id="respuestas2"><button type="button" class="btn btn-primary" onclick="respuesta('2','Coca-Cola')">Coca-Cola</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('2','Fanta')">Fanta</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('2','Sprite')">Sprite</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('2','Agua')">Agua</button></div>
+                            
+                            <h3 class="mt-1 d-none" id="mensajeValidacion2"></h3>
+                        </li>
+                        <li class="list-group-item text-center d-none" id="pregunta3">
+                            <h5 class="mb-1"><em>¿A que se dedica "Abel Pintos"? (20 ptos)</em></h5>
+                            <div id="respuestas3"><button type="button" class="btn btn-primary" onclick="respuesta('3','Bailarín')">Bailarín</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('3','Cantante')">Cantante</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('3','Actor')">Actor</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('3','Futbolista')">Futbolista</button></div>
+                            
+                            <h3 class="mt-1 d-none" id="mensajeValidacion3"></h3>
+                        </li>
+                        <li class="list-group-item text-center d-none" id="pregunta4">
+                            <h5 class="mb-1"><em>¿Quién creó la frase "hasta Tinelli y el Maipo no paro"? (20 ptos)</em></h5>
+                            <div id="respuestas4"><button type="button" class="btn btn-primary" onclick="respuesta('4','Moria Casan')">Moria Casan</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('4','Ronnie Arias')">Ronnie Arias</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('4','Zulma Lobato')">Zulma Lobato</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('4','Marley')">Marley</button></div>
+                            
+                            <h3 class="mt-1 d-none" id="mensajeValidacion4"></h3>
+                        </li>
+                        <li class="list-group-item text-center d-none" id="pregunta5">
+                            <h5 class="mb-1"><em>¿Qué significa H2O? (20 ptos)</em></h5>
+                            <div id="respuestas5"><button type="button" class="btn btn-primary" onclick="respuesta('5','Hidrógeno')">Hidrógeno</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('5','Oxígeno')">Oxígeno</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('5','Helio')">Helio</button>
+                            <button type="button" class="btn btn-primary" onclick="respuesta('5','Agua')">Agua</button></div>
+                            
+                            <h3 class="mt-1 d-none" id="mensajeValidacion5"></h3>
+                        </li>
+                      </ul>
+
+                      <div class="col-lg-12 text-center mt-3 d-none" id="reiniciarPreguntas">
+                        <hr>
+                        <h3 class="mt-1" id="puntuacionPreguntas"></h3>
+                        <button type="button" class="btn btn-dark " onclick="reiniciarPreguntas()">Reiniciar Juego</button>
+                    </div>
+              
+            </div>
+        </section>
+        <!-- Fin Preguntas y Respuestas -->
+
+          <!-- Scroll to Top Button-->
+          <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </body>
+
+    <script src="js/scripts.js"></script>
+    <script>
+        $(document).ready(function(){
+        var datos=JSON.parse(localStorage.getItem('DatosUsuario'));
+            $('#titulo').append(" "+datos.nombre+" "+datos.apellido)
+        });
+    </script>
+</html>
